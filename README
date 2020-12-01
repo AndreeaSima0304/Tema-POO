@@ -1,0 +1,33 @@
+SIMA ANDREEA TEODORA 323CA
+
+In fisierul main.java am creat cate o lista pentru ficare entitate (User, 
+Actor etc.) pentru a putea stoca datele pentru fiecare date in input 
+(de exemplu: List<UserInputData> users = input.getUsers();). 
+Am retinut de fiecare data username-ul utilizatorilor cu care lucram in 
+variabila user si am procedat la fel si cu filmele, salvand in variabila
+movie.
+
+In cazul in care actiunea este de tip "command" si "favorite", vom verifica
+daca video-ul se afla deja in lista de favorite a utilizatorului, caz in
+care vom afisa un mesaj de eroare, iar in caz contrar, il vom adauga in 
+lista de favorite si vom afisa mesajul de confirmare. Inainte de a verifica
+daca video-ul se afla in lista de favorite, vom verifica daca acesta a fost
+vazut sau nu de utilizator. Daca nu a fost vazut, afisam un mesaj de eroare.
+
+In cazul in care actiunea este de tip "command" si "view", vom verifica
+daca video-ul a mai fost vazut inainte sau nu. Daca acesta a mai fost vazut,
+afisam titlul filmului si numarul de vizionari, iar daca acesta nu a mai 
+fost vazut, afisam titlul acestuia si 1 (a fost vizualizat doar o data)
+si adaugam in istoricul utilizatorului titlul video-ului.
+
+In cazul in care actiunea este de tip "command" si "rating", vom verifica
+daca video-ul a fost vazut sau nu. Daca acesta nu a mai fost vazut, 
+utilizatorul nu are voie sa dea rating la video-ul respectiv. Daca acesta
+a fost vazut, vom afisa username-ul utilizatorului si rating-ul dat de el.
+
+Daca actiunea este de tip "recommendation" si "standard", aceasta va fi
+valabila pentru orice tip de utilizator. Vom afisa primul video nevazut
+de utilizator.
+
+Daca actiunea este de tip "recommendation" si "best_unseen", aceasta va fi valabila pentru orice tip de utilizator. Vom afisa video-ul cu rating-ul
+cel mai mare, care nu a fost vazut de utilizator.
